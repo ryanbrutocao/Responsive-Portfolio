@@ -93,7 +93,17 @@ top:80px;
 
 .centerBox{
 
-  clear: both;
+  /* clear: both; */
+  height:auto ;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  max-width: 960px;
+  padding: 20px;
+  margin: 25px 20px 60px 149px;
+  overflow: auto;
+}
+.portCenterBox{
+
   height:auto ;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -173,7 +183,11 @@ footer {
   width: 70%;
   overflow: auto;
   margin:25px 20px 60px 70px;
-  
+}
+.portCenterBox {
+  width: 70%;
+  overflow: auto;
+  margin:25px 20px 60px 70px;
 }
  .nav-bar{
    margin-left: 70px;
@@ -204,9 +218,8 @@ footer {
   .name-box, .main-nav {
    margin-left: 35px;
  }
- .centerBox{
-   /* margin-left:35px;   */
- width:86%;
+ .portCenterBox{
+  width:90%
  }
  .port-pics{
   position: relative;
@@ -223,12 +236,17 @@ footer {
 
 @media only screen and (max-width:640px) {
 header {
+  position: static;
+  max-width: 100%;
   height:auto;
 }
+/* section {
+  max-width: 100%;
+} */
  .nav-bar{
    margin:0;
    justify-content: center;
-   width: 100%;
+   max-width: 100%;
    
   }
 .name-box {
@@ -251,6 +269,25 @@ header {
     float: unset;
     
   } 
+  .portCenterBox{
+    /* height:auto ; */
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  width: 500px;
+  /* padding: 20px; */
+  margin:-30px 20px 60px 70px;
+  overflow: auto;
+   }.port-pics{
+    position: relative;
+    margin: 10px 8px 15px 8px;
+    width: 420px;
+  }
+  
+  .img-banner{
+    position: absolute;
+    margin: 10px 0px 15px 8px;
+    width: 420px;
+  }
   .centerBox {
     
     overflow: auto;
