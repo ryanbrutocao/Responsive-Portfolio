@@ -13,48 +13,47 @@ header {
   /* max-width: 960px; */
   height: 80px;
   border-bottom: 2px solid #cccccc;
-  position:fixed;
+  position:absolute;
   top:0;
   width: 100%;
   z-index: 1;
 }
 
-/* .nav-bar {
+.nav-bar {
   height: 78px;
   background-color: #ffffff;
-  position: absolute;
+  /* position: absolute; */
   top: 0px;
   margin-left: 150px;
   max-width: 960px; 
-  position:fixed;
+  /* position:fixed; */
   position:-25px;
-} */
-
+}
 .name-box, .main-nav {
-  float: left;
+  /* float: left; */
 }
 
-.name-box {
-  clear:both;
+.name-box { 
+   clear:both;
   height: 100%;
   width: 200px;
   position: absolute;
   top:0;
-  margin-left:150px;
+   /* margin-left:150px; not needed anymore  */
   font-size: 28px;
   color: #ffffff;
   background-color: #4aaaa5; 
   display: flex;
   align-items: center;
-  justify-content: center ;
+  justify-content: center;
 }
 
 
 .main-nav {
   max-width: 960px; 
- /* position: static ; */
+  float:right;
+ position: right ;
  margin-right:20px;
-  float: right;
   margin-top: 40px;
   display: flex;
   flex-direction: row;
@@ -63,6 +62,7 @@ header {
 
 
 h1 {
+  clear: both;
   text-align: center;
   font-size: 28px;
 }
@@ -85,21 +85,23 @@ p {
   border-bottom: 2px solid #cccccc;
   padding-bottom: 20px;
   text-align:left;
+  height: auto;
 }
 section {
   position: relative;
 top:80px;
 }
+
 .centerBox{
 
   clear: both;
-  height: auto;
+  height:auto ;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   max-width: 960px;
   padding: 20px;
   margin: 25px 20px 60px 149px;
-  /* overflow: auto; */
+  overflow: auto;
 }
 
 .about-me-text {
@@ -115,8 +117,11 @@ top:80px;
   border: 1px solid #cccccc;
   margin: 2px 0px 7px 0px;
   width: 918px;
+  max-width: 918px;
 }
-
+form .form {
+ max-width:95%;
+}
 #formSubmit {
   height: 25px;
   width:100px;
@@ -142,7 +147,7 @@ top:80px;
   margin:10px 30px 15px 0px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 footer {
@@ -164,10 +169,9 @@ footer {
 
 @media only screen and (max-width:980px) {
 
-
-.centerBox{
- max-width: 500px;
-}
+ .nav-bar{
+   max-width: 100%;
+ }
 .form {
   max-width:458px;
 }
@@ -177,6 +181,7 @@ footer {
 @media only screen and (max-width:768px) {
  .nav-bar {
    margin-right: 20px;
+   margin-left:0px;
  }
   .name-box, .main-nav {
    margin-left: 35px;
@@ -191,23 +196,29 @@ footer {
 header {
   height:auto;
 }
+ .nav-bar{
+   margin:0;
+   justify-content: center;
+   
+  }
 .name-box {
   margin:0;
   padding: 10px;
-  width: 640px;
-  /* max-width: auto; */
+  width: 100%;
+  max-width: auto;
   position: static;
 }
 .main-nav {
-/* justify-content: center; */
-max-width: 100%;
-display: flex;
-  align-items: center;
   justify-content: center;
-  align-content: center;
-  width: 640px;
-  margin:0;
-  padding:5px;
-}
-
+  max-width: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width:auto;
+    margin:0;
+    padding:5px;
+    float: unset;
+    
+  } 
 }
