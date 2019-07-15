@@ -1,0 +1,36 @@
+body {
+  background-color:rgb(20, 5, 90);
+  color:royalblue;
+  font-size: 26;
+  text-align: center;
+}
+.jumbotron {
+  background-color: #ffffff;
+ margin:4% 10%;
+ opacity: .85;
+}
+.fruit-left {
+
+  width: 75%;
+}
+
+
+.fruit-right {
+
+  width: 80%;
+}
+@media only screen and (max-width:980px) {
+
+
+ 
+}
+
+@media only screen and (max-width:768px) {
+
+
+}
+
+@media only screen and (max-width:640px) {
+
+
+}
