@@ -3,39 +3,50 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan Brutocao's Portfolio</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./assets/materialize/css/materialize.css"  media="screen,projection"/>
 </head>
 
 <header>
-  <nav class="nav-bar">
-    
-    <div>
-      <h1 class="name-box">Ryan Brutocao</h1>
-    </div>
-
-  
-        <ul class="main-nav"> 
-          <li>
-            <a href="index.html" class="hover">About | </a>
-          </li> 
-          <li>
-            <a href="portfolio.html" class="hover">Portfolio | </a>
-          </li> 
-          <li>
-            <a href="contact.html" class="hover">Contact</a>
-          </li>
-        </ul>
-  
-  </nav>
+    <nav class="nav-bar">
+      <ul class="main-nav"> 
+        <li>
+          <h1 class="name-box">Ryan Brutocao</h1>
+        </li>
+        <li>
+          <a href="#about" class="hover">About</a>
+        </li> 
+        <li>
+            <a class="pipe">|</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="hover">Portfolio</a>
+        </li> 
+        <li>
+            <a class="pipe">|</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover">Contact</a>
+        </li>
+      </ul>
+      
+    </nav>
 </header>
 
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
  <section>
+    <a name="about"></a> <br>
+
   <div class="centerBox">
    <h1 class="about">About Me </h1>
     <div class="about-me-text">
@@ -48,9 +59,129 @@
 </section>
    
 
+<section>
+  <a name="portfolio"></a><br>
+  
+  <div class="centerBox">
+    <h1 class="about">Portfolio </h1>   
+    
+<!--     
+    <div class="row"> -->
+        <!-- <div class="col s12 m6"> -->
 
+            <div class="carousel">
+
+                <div class="carousel-item">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/image1.jpg">
+                        <a href="./Crystal Collector Game/index.html" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>             
+                      </div>
+                      <div class="card-content">
+                     <h6><b> Crystal Collector Game</b></h6><br>
+                     <p>Assignment 4 - Randomly generated values between 1-12 are assigned to the crystals at the start of game. A randomly generated number between 19-200 is assigned as the target. User must click crystals to accumulate the exact score of the target.</p>
+                      </div>
+                      <div class="card-action">
+                          <a href="#">This is a link to the portfolio</a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/image2.jpg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>             
+                      </div>
+                      <div class="card-content">
+                      Description of the project here
+                      </div>
+                      <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/image3.jpg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>             
+                      </div>
+                      <div class="card-content">
+                      Description of the project here
+                      </div>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/image4.jpg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>             
+                      </div>
+                      <div class="card-content">
+                      Description of the project here
+                      </div>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/image5.jpg">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>             
+                      </div>
+                      <div class="card-content">
+                      Description of the project here
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+                  
+          
+        <!-- </div> -->
+      <!-- </div> -->
+              
+    </div>
+     
+    </div>
+ 
+     
+  
+    
+  </section>
+  
+
+
+
+<section>
+  <div class="centerBox">
+      <a name="contact"></a><br>
+
+   <h1 class="about">Contact </h1>
+    <div class="about-me-text">
+    </div>
+    <form>
+       Name<br>
+      <input type="text" name="firstname" class="form" placeholder=" John Smith"> <br>
+       E-mail<br>
+      <input type="email" name="email" class="form" placeholder=" example@gmail.com"> <br>
+        Message<br>
+      <textarea rows="8" cols="50" class="form"></textarea><br>
+      <input type="submit"  name="submit"  class="form" id="formSubmit">
+    </form>
+  </div>
+</section>
+<!-- <script src="assets/materialize/js/init.js"></script> -->
+<script type="text/javascript" src="./assets/portfolio.js"></script>
 <footer class="bottom">
         <p>Copyright&copy;</p>
+        <!-- <div id="footerLinks"> -->
+          <!-- <a href="https://github.com/ryanbrutocao"  id="gitHub"></a> -->
+          <img src="./assets/images/github_PNG.png" href="https://github.com/ryanbrutocao"  id="gitHub">  
+          <!-- <a href="https://www.linkedin.com/in/ryanbrutocao/" id="linkedIn"></a> -->
+        <!-- </div> -->
 </footer>
+<script type="text/javascript" src="./assets/materialize/js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
