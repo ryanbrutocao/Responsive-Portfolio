@@ -1,0 +1,64 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  width: 33%;
+
+}
+h1 {
+margin: auto;
+width: 50%;
+text-align: center;
+color: red;
+}
+div.addBurger{
+margin: auto;
+width: 50%;
+text-align: center;
+
+}
+div.orders {
+  min-height: 100px;
+  height: auto;
+  width:100%
+}
+.leftHalf {
+  
+  width:50%;
+  float: left;
+
+}
+.rightHalf {
+  float: right;
+  width:50%;
+
+  
+}
+
+img {
+  float: end;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+button {
+  background-color: rgb(6, 77, 218);
+  /* float: right; */
+}
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+body {
+  background: rgb(255, 208, 0);
+}
